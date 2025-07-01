@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satz von Pythagoeas, Höhensatz, Kathetensatz</title>
+  
+
+</head>
+<body style="background-color: #B9D1EA; margin-top: 1em; ">
+       
+
+    <style> 
+         
+        .Text1 {font-size: 1.5em;font-family: Verdana,Sans-serif; margin:0.5em;}
+        .Text2 { font-size: 1em; font-family: Verdana,Sans-serif;margin-top:1em;margin-left:0.5em;}
+        .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
+        
+         .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
+        button {background-color:white;font-size:0.9em; font-family: Verdana, Sans-serif; }
+        input {background-color:yellow; }
+    </style>
+    
+	
+    <p class="Text1">Wie löse ich Matheaufgaben?</p>
+		<p class="Text1">Satz von Pythagoras, Höhensatz, Kathetensatz</p>
+  
+    <p class="Text2"><span style= "background-color:white;">Sie sehen ein gelbes Eingabefeld und die <br>Schalter: Prüfen und Lösung.</span></p>
+		<p class="Text2"><span style= "background-color:white;">Tragen Sie Ihr Ergebnis ein, prüfen Sie es <br> oder starten Sie eine Lösung.</span></p>
+  
+    <!--//Aufgabe 1-->
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 1
+
+Wie lang ist die Kathete a in cm, 
+wenn die Kathete b = 7,8 cm und die Hypotenuse c = 9,8 cm lang sind?</strong></p>
+          <img src="D:\Loesen von Aufgaben1\Pythagoras_neu\Aufgabe1.jpg" align="middle">   <button  onclick="window.open('Pytha_Aufgabe1.html');" >Lösung</button></pre>
+
+<!--//Aufgabe 2-->
+
+  <pre><p class ="Aufgabe" ><strong>
+Aufgabe 2
+
+Wie lang ist die Hypotenuse c in cm, 
+wenn die Katheten a = 7,3 cm und b = 2,1 cm lang sind?  </strong>
+
+  <img src="D:\Loesen von Aufgaben1\Pythagoras_neu\Aufgabe1.jpg" align="middle"> c = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe2() { 
+                                                
+                          if (Eintrag2.value=="7,6") {alert("Richtig"); document.getElementById("Pruef2").disabled= true;
+                          }  
+                           
+                          else if (Eintrag2.value!=="7,6" && Eintrag2.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag2").value="7,6"; window.open('Pytha_Aufgabe2.html');           
+                          document.getElementById("Pruef2").disabled= true;}
+                               
+                          else if (Eintrag2.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+  <!--//Aufgabe 34-->
+
+  <p class="Aufgabe" style="font-weight:bold" >Aufgabe 34</p>
+  <pre><p class="Aufgabe" style="font-weight:bold"> 5x - 6      9 - 10x      3x - 4       3 - 4x
+-------- - ----------- = --------- - ----------    <button  onclick="window.open('LinGleich_Aufgabe34.html');" >Lösung</button>      
+   10          14            5            7  </p></pre>
+
+  <!--//Aufgabe 35-->
+   
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 35</p>
+  <pre><p class = "Aufgabe" ><strong>
+ 7x - 2     4                3(x + 2) 
+-------- - ---(x + 3) + 6 = ----------   x = </strong>Ihr Ergebnis: <input type="text" id="Eintrag35" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef35" onclick="Aufgabe35()">Prüfen</button>    
+    <strong>3       5                    2</strong></p></pre> 
+       
+     <script>
+                        function Aufgabe35() { 
+                                                
+                          if (Eintrag35.value=="2") {alert("Richtig"); document.getElementById("Pruef35").disabled= true;
+                          }  
+                           
+                          else if (Eintrag35.value!=="2" && Eintrag35.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag35").value="2"; window.open('LinGleich_Aufgabe35.html');           
+                          document.getElementById("Pruef35").disabled= true;}
+                               
+                          else if (Eintrag35.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+  <!--//Aufgabe 36-->
+
+   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 36</p>
+  <pre><p class="Aufgabe" style="font-weight:bold"> ax - b²      bx - a²     a - ab     b - ab
+--------- + ---------- = -------- + --------   <button  onclick="window.open('LinGleich_Aufgabe36.html');" >Lösung</button>          
+     b           a           b          a  </p></pre>
+  
+  <!--//Aufgabe 37-->
+  
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 37</p>
+  <pre><p class = "Aufgabe" ><strong> a         b   
+--- + b = --- + a   x = </strong>Ihr Ergebnis: <input type="text" id="Eintrag37" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef37" onclick="Aufgabe37()">Prüfen</button>         
+ <strong>x         x</strong></p></pre>
+  
+
+                    <script>
+                        function Aufgabe37() { 
+                                                
+                          if (Eintrag37.value=="1") {alert("Richtig"); document.getElementById("Pruef37").disabled= true;
+                          }  
+                           
+                          else if (Eintrag37.value!=="1" && Eintrag37.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag37").value="1";window.open('LinGleich_Aufgabe37.html');            
+                          document.getElementById("Pruef37").disabled= true;}
+                               
+                          else if (Eintrag37.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 38-->
+
+   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 38</p>
+  <pre><p class="Aufgabe" style="font-weight:bold"> 10 + x      x + 4          x + 3             
+-------- - -------- = 1 - --------   <button  onclick="window.open('LinGleich_Aufgabe38.html');" >Lösung</button>          
+   24x       12x             8x   </p></pre>
+
+  <!--//Aufgabe 39-->
+  
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 39</p>
+  <pre><p class = "Aufgabe" ><strong> 7       8      9     1       31 - 7x 
+---- - ---- + ---- - --- =  ----------   x = </strong>Ihr Ergebnis: <input type="text" id="Eintrag39" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef39" onclick="Aufgabe39()">Prüfen</button>               
+ <strong>2x     3x     4x     3         6x</strong>  </p></pre>
+
+                    <script>
+                        function Aufgabe39() { 
+                                                
+                          if (Eintrag39.value=="2,5") {alert("Richtig"); document.getElementById("Pruef39").disabled= true;
+                          }  
+                           
+                          else if (Eintrag39.value!=="2,5" && Eintrag39.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag39").value="2,5";window.open('LinGleich_Aufgabe39.html');            
+                          document.getElementById("Pruef39").disabled= true;}
+                               
+                          else if (Eintrag39.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 40-->
+
+   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 40</p>
+  <pre><p class="Aufgabe" style="font-weight:bold"> 3a - 5b     a + 7x      5b + 4x      3      3      4  
+--------- + -------- + ---------- + ----- + ---- - ---- = 0          
+   15ab       12ax         20bx      4a      5b     3x 
+   
+<button  onclick="window.open('LinGleich_Aufgabe40.html');" >Lösung</button></p></pre>                  
+                      
+    <!--//Aufgabe 41-->
+  
+  <p class ="Aufgabe" style="font-weight:bold">Aufgabe 41</p>
+  <pre><p class = "Aufgabe" ><strong> 1 + x      a         <input type="text" id="Eintrag41" maxlength="3" size="1" style= background-color:yellow >         
+-------- = ---   x = --------   </strong>Ihr Ergebnis: </input> <button id="Pruef41" onclick="Aufgabe41()">Prüfen</button>       
+ <strong>1 - x      b         a + b</strong></p></pre>
+  
+                    <script>
+                        function Aufgabe41() { 
+                                                
+                          if (Eintrag41.value=="a-b") {alert("Richtig"); document.getElementById("Pruef41").disabled= true;
+                          }  
+                           
+                          else if (Eintrag41.value!=="a-b" && Eintrag41.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag41").value="a-b";window.open('LinGleich_Aufgabe41.html');
+                          document.getElementById("Pruef41").disabled= true;}                               
+                          else if (Eintrag41.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+    <!--//Aufgabe 42-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 42</p>
+        <pre><p class="Aufgabe" style="font-weight:bold"> x + 4      x + 6 
+-------- = --------   <button  onclick="window.open('LinGleich_Aufgabe42.html');" >Lösung</button>       
+ 7x + 1    7x + 6  </p></pre>
+
+          
+    <!--//Aufgabe 43-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 43</p>
+ <pre><p class = "Aufgabe" ><strong> a - bx      a 
+--------- = ---    x = </strong>Ihr Ergebnis: <input type="text" id="Eintrag43" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef43" onclick="Aufgabe43()">Prüfen</button>     
+ <strong>ax + b      b</strong></p></pre> 
+    
+                    <script>
+                        function Aufgabe43() { 
+                                                
+                          if (Eintrag43.value=="0") {alert("Richtig"); document.getElementById("Pruef43").disabled= true;
+                          }  
+                           
+                          else if (Eintrag43.value!=="0" && Eintrag43.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag43").value="0";window.open('LinGleich_Aufgabe43.html');            
+                          document.getElementById("Pruef43").disabled= true;}                               
+                          else if (Eintrag43.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+    <!--//Aufgabe 44-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 44</p>
+        <pre><p class="Aufgabe" style="font-weight:bold"> 5x - 1      5x + 2       4x - 1       7x - 2   
+-------- - ---------- - ---------- + ---------- = 1  
+ 2x - 1      4x - 2       6x - 3       8x - 4
+
+<button  onclick="window.open('LinGleich_Aufgabe44.html');" >Lösung</button></p></pre>
+
+    <!--//Aufgabe 45-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 45</p>
+  <pre><p class = "Aufgabe" ><strong>  5x + 3      4x + 9 
+---------- - -------- = 2    x = </strong>Ihr Ergebnis: <input type="text" id="Eintrag45" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef45" onclick="Aufgabe45()">Prüfen</button>
+  <strong>7x - 9      9 - 7x</strong></p></pre>    
+    
+
+  
+                    <script>
+                        function Aufgabe45() { 
+                                                
+                          if (Eintrag45.value=="6") {alert("Richtig"); document.getElementById("Pruef45").disabled= true;
+                          }  
+                           
+                          else if (Eintrag45.value!=="6" && Eintrag45.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag45").value="6"; window.open('LinGleich_Aufgabe45.html');           
+                          document.getElementById("Pruef45").disabled= true;}                               
+                          else if (Eintrag45.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script> 
+
+    <!--//Aufgabe 46-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 46</p>
+        <pre><p class="Aufgabe" style="font-weight:bold"> 7x - 1     5x - 3       8x - 5      9x - 7 
+-------- - --------- + --------- - --------- = 0    
+  x - 2     3x - 6      5x - 10     7x - 14 
+  
+<button  onclick="window.open('LinGleich_Aufgabe46.html');" >Lösung</button></p></pre>
+
+        <!--//Aufgabe 47-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 47</p>
+  <pre><p class = "Aufgabe" ><strong> x + 3      2x + 5      x - 5      4x - 3  
+-------- - -------- - -------- + ---------- = 0      
+ x + 1      x + 2      3x + 3      3x + 6</strong>
+
+Ihr Ergebnis:  <input type="text" id="Eintrag47" maxlength="1" size="1" style= background-color:yellow ></input> <button id="Pruef47" onclick="Aufgabe47()">Prüfen</button></p></pre>
+  
+                    <script>
+                        function Aufgabe47() { 
+                                                
+                          if (Eintrag47.value=="5") {alert("Richtig"); document.getElementById("Pruef47").disabled= true;
+                          }  
+                           
+                          else if (Eintrag47.value!=="5" && Eintrag47.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag47").value="5 "; window.open('LinGleich_Aufgabe47.html');           
+                          document.getElementById("Pruef47").disabled= true;}                               
+                          else if (Eintrag47.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+    <!--//Aufgabe 48-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 48</p>
+<pre><p class="Aufgabe" style="font-weight:bold">   ax        bx   
+------- + ------- = a² + b²     <button  onclick="window.open('LinGleich_Aufgabe48.html');" >Lösung</button>    
+ a + b     a - b </p></pre>
+
+    <!--//Aufgabe 49-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 49</p>
+  <pre><p class = "Aufgabe" ><strong> 2x + 1     2x + 4     2x - 9     4 - 8x            <input type="text" id="Eintrag49" maxlength="1" size="1" style= background-color:yellow ></input> 
+-------- + -------- + -------- = ---------   x = - ------- </strong>
+  <strong>x - 1     1 - x      x² - 1     1 - x²              9</strong>
+
+Ihr Ergebnis: <button id="Pruef49" onclick="Aufgabe49()">Prüfen</button></p></pre>          
+  
+                    <script>
+                        function Aufgabe49() { 
+                                                
+                          if (Eintrag49.value=="5") {alert("Richtig"); document.getElementById("Pruef49").disabled= true;
+                          }  
+                           
+                          else if (Eintrag49.value!=="5" && Eintrag49.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag49").value="5"; window.open('LinGleich_Aufgabe49.html');
+                          document.getElementById("Pruef49").disabled= true;}                               
+                          else if (Eintrag49.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+    <!--//Aufgabe 50-->
+
+    <p class="Aufgabe" style="font-weight:bold" >Aufgabe 50</p>
+        <pre><p class="Aufgabe" style="font-weight:bold">    1       1       x + 5         x   
+-------- - --- - ---------- + --------- = 0  <button  onclick="window.open('LinGleich_Aufgabe50.html');" >Lösung</button>     
+ 8 - 4x     8     16 - 4x²     16 + 8x    </p></pre>
+
+    <!--//Aufgabe 51-->
+
+    <p class ="Aufgabe" style="font-weight:bold">Aufgabe 51</p>
+  <pre><p class = "Aufgabe" ><strong>  3x - 5     7x - 10        x + 99 
+--------- + --------- + -------------- = 10 
+  x + 2       x + 1      x² + 3x + 2 </strong>  
+                                                          
+Ihr Ergebnis: <input type="text" id="Eintrag51" maxlength="1" size="1" style= background-color:yellow > </input><button id="Pruef51" onclick="Aufgabe51()">Prüfen</button> </p></pre>                 
+    
+           
+                    <script>
+                        function Aufgabe51() { 
+                                                
+                          if (Eintrag51.value=="2") {alert("Richtig"); document.getElementById("Pruef51").disabled= true;
+                          }  
+                           
+                          else if (Eintrag51.value!=="2" && Eintrag51.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag51").value="2"; window.open('LinGleich_Aufgabe51.html');                                 
+                          document.getElementById("Pruef51").disabled= true;}                               
+                          else if (Eintrag51.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+                
+          <button type="button" class ="Aufgabe" onclick="window.open('index.html'); window.close('LinGleich1.html');">zurück...</button>    
+	        <button type="button" class ="Aufgabe" onclick="window.open('LinGleich2.html'); window.close('LinGleich1.html');">mehr...</button>
+          
+        <script>
+            document.body.addEventListener("input", function(inputEvent) {
+              const eingabeFeld = inputEvent.target;
+              if (eingabeFeld.maxLength > 0 && eingabeFeld.value.length > eingabeFeld.maxLength) {
+                eingabeFeld.value = eingabeFeld.value.substr(0, eingabeFeld.maxLength);
+              }
+            })
+          </script><br>
+        
+         
+
+        </body></html>
+
+                      
+                    
