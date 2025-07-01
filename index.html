@@ -18,7 +18,7 @@
         .Text3 { font-size: 0.8em;background-color: white; font-family: Verdana,Sans-serif;margin:0.5em; }
         
          .Aufgabe { font-size: 0.9em;  font-family: monospace, monospace;}
-        button {background-color:white;font-size:0.9em; font-family: Verdana, Sans-serif; }
+        button {background-color:white;font-size:0.9em; font-family: Verdana, Sans-serif;margin:0.5em; }
         input {background-color:yellow; }
     </style>
     
@@ -35,18 +35,16 @@
 
 Wie lang ist die Kathete a in cm, 
 wenn die Kathete b = 7,8 cm und die Hypotenuse c = 9,8 cm lang sind?</strong></p>
-          <img src="Aufgabe1.jpg" align="middle">   <button  onclick="window.open('Pytha_Aufgabe1.html');" >Lösung</button></pre>
+          <img src="Aufgabe1.jpg" align="middle" >  <button  onclick="window.open('Pytha_Aufgabe1.html');" >Lösung</button></pre>
 
 <!--//Aufgabe 2-->
 
-  <pre><p class ="Aufgabe" ><strong>
-Aufgabe 2
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 2
 
 Wie lang ist die Hypotenuse c in cm, 
 wenn die Katheten a = 7,3 cm und b = 2,1 cm lang sind?  </strong>
 
-  <img src="Aufgabe1.jpg" align="middle"> c = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button>
-    </p></pre>
+  <img src="Aufgabe1.jpg" align="middle"> c = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> <button id="Pruef2" onclick="Aufgabe2()">Prüfen</button></p></pre>
  
                       <script>
                         function Aufgabe2() { 
@@ -61,7 +59,99 @@ wenn die Katheten a = 7,3 cm und b = 2,1 cm lang sind?  </strong>
                          
                       </script>
 
-  <!--//Aufgabe 34-->
+        <!--//Aufgabe 3-->                  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 3
+
+Eine Leiter ist 6 m lang und steht am Fußpunkt 1,3 m von einer Wand entfernt. 
+In welcher Höhe in m berührt die Leiter die Wand? </strong>
+<button  onclick="window.open('Pytha_Aufgabe3.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 4-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 4
+
+Eine Leiter ist 5 m lang. 
+Sie ist genauso hoch wie die Wand, an der sie steht. 
+Wie weit steht der Fußpunkt der Leiter in m von der Wand entfernt, 
+wenn die Leiter die Wand oben 1 m unter der Oberkante berührt?   </strong>
+Er ist <input type="text" id="Eintrag4" maxlength="1" size="1" style= background-color:yellow ></input> m entfernt.<button id="Pruef4" onclick="Aufgabe4()">Prüfen</button></p><nobr>
+</pre>
+ 
+                      <script>
+                        function Aufgabe4() { 
+                                                
+                          if (Eintrag4.value=="3") {alert("Richtig"); document.getElementById("Pruef4").disabled= true;
+                          }  
+                           
+                          else if (Eintrag4.value!=="3" && Eintrag4.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag4").value="3"; window.open('Pytha_Aufgabe4.html');           
+                          document.getElementById("Pruef4").disabled= true;}
+                               
+                          else if (Eintrag4.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+
+ <!--//Aufgabe 5-->  
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 5</nobr>
+
+Ein Rechteck ist 4 m lang und 2 m breit. 
+Wie lang ist seine Diagonale d in m?              </strong>
+<button  onclick="window.open('Pytha_Aufgabe5.html');">Lösung</button></p></pre>
+
+<!--//Aufgabe 6-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 6
+
+Ein gleichseitiges Dreieck hat eine Seitenlänge s von 8 cm.
+Wie groß ist seine Höhe h in cm?                    </strong>
+h = <input type="text" id="Eintrag6" maxlength="3" size="1" style= background-color:yellow ></input> cm<button id="Pruef6" onclick="Aufgabe6()">Prüfen</button><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe6() { 
+                                                
+                          if (Eintrag6.value=="6,9") {alert("Richtig"); document.getElementById("Pruef6").disabled= true;
+                          }  
+                           
+                          else if (Eintrag6.value!=="6,9" && Eintrag6.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag6").value="6,9"; window.open('Pytha_Aufgabe6.html');           
+                          document.getElementById("Pruef6").disabled= true;}
+                               
+                          else if (Eintrag6.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>
+                      
+  <!--//Aufgabe 7-->   
+
+  <pre><p class="Aufgabe"><strong>Aufgabe 7</nobr>
+
+Berechnen Sie x in mm.          </strong> 
+
+<img src="Aufgabe4.jpg" align="middle" >  <button  onclick="window.open('Pytha_Aufgabe7.html');" >Lösung</button></p></pre>
+
+<!--//Aufgabe 8-->
+
+  <pre><p class ="Aufgabe" ><strong>Aufgabe 8
+
+Berechnen Sie h in mm. </strong>
+
+ <img src="Aufgabe4a.jpg" align="middle"> h = <input type="text" id="Eintrag2" maxlength="3" size="1" style= background-color:yellow ></input> mm<button id="Pruef8" onclick="Aufgabe2()">Prüfen</button></p></pre><nobr>
+    </p></pre>
+ 
+                      <script>
+                        function Aufgabe8() { 
+                                                
+                          if (Eintrag8.value=="17") {alert("Richtig"); document.getElementById("Pruef8").disabled= true;
+                          }  
+                           
+                          else if (Eintrag8.value!=="17" && Eintrag8.value!=="") {alert("Leider falsch. Die Lösung wird angezeigt."); document.getElementById("Eintrag8").value="17"; window.open('Pytha_Aufgabe8.html');           
+                          document.getElementById("Pruef8").disabled= true;}
+                               
+                          else if (Eintrag8.value=="") {alert("Bitte eine Eingabe machen")}}
+                         
+                      </script>                      
+
+  <!--//Aufgabe 36-->
 
   <p class="Aufgabe" style="font-weight:bold" >Aufgabe 34</p>
   <pre><p class="Aufgabe" style="font-weight:bold"> 5x - 6      9 - 10x      3x - 4       3 - 4x
